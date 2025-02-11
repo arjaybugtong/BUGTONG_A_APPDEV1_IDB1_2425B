@@ -1,0 +1,21 @@
+/* Placeholder Animation */
+.form-control::placeholder {
+    color: #888;
+    transition: color 0.3s;
+}
+.form-control:focus::placeholder {
+    color: #555;
+}
+
+/* Form Submission Confirmation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+}
+.message-sent {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: fadeOut 3s ease-in-out forwards;
+}

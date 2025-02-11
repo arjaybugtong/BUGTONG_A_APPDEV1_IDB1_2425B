@@ -1,0 +1,38 @@
+.btn {
+    border-radius: 25px;
+}
+header.bg-primary {
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnU0bXR0dXd4d3VsamN0OGZkcGRiOTRybXBydmc5dTEyaHB6eXkyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3dcZ7OCrJ87gw5xauE/giphy.gif') no-repeat center center/cover;
+    background-size: contain;
+    
+}
+
+.navbar-nav .btn {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.navbar-nav .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+@keyframes textChange {
+    0% { content: "Quality content? Maybe."; }
+    50% { content: "Memes? Absolutely."; }
+    100% { content: "A questionable life choice? Perhaps."; }
+}
+.header-subtitle::after {
+    content: "Quality content? Maybe.";
+    animation: textChange 6s infinite;
+    display: inline-block;
+}
+
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
